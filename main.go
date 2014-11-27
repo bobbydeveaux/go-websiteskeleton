@@ -5,11 +5,11 @@ import (
     "net/http"
     "time"
 
-    "git-go-websiteskeleton/app/common"
-    "git-go-websiteskeleton/app/home"
-    "git-go-websiteskeleton/app/user"
-    "git-go-websiteskeleton/app/cart"
-    "git-go-websiteskeleton/app/about"
+    "go-websiteskeleton/app/common"
+    "go-websiteskeleton/app/home"
+    "go-websiteskeleton/app/user"
+    "go-websiteskeleton/app/cart"
+    "go-websiteskeleton/app/about"
 
     "github.com/golang/glog"
     "github.com/gorilla/mux"
