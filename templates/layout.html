@@ -1,59 +1,85 @@
 {{define "base"}}
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
     <head>
+        <title>{{ .Title }} - DVO Media</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="DVO Media is an online digital agency creating modern websites using the latest technology.">
         <meta name="keywords" content="Websites, online, media, monetisation, cpa, cpc, technology">
 
         <meta name="robots" content="index,follow" />
         <meta name="copyright" content="DVO Media" />
-
-        <script type="text/javascript" src="/static/js/external/jquery/jquery-2.0.3.min.js"></script>
-        <script type="text/javascript" src="/static/js/external/bootstrap/bootstrap.min.js"></script>
-
-        <link rel="stylesheet" type="text/css" href="/static/css/app.css">
-
-        <title>{{ .Title }} - Go Template</title>
+        <!--[if lte IE 8]><script src="/static/js/html5shiv.js"></script><![endif]-->
+        <script src="/static/js/external/jquery/jquery-2.1.1.js"></script>
+        <script src="/static/js/skel.min.js"></script>
+        <script src="/static/js/skel-layers.min.js"></script>
+        <script src="/static/js/init.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="/static/css/skel.css" />
+            <link rel="stylesheet" href="/static/css/style.css" />
+            <link rel="stylesheet" href="/static/css/style-xlarge.css" />
+        </noscript>
     </head>
-    <body>
-        <div class="container">
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="/">Go Template</a>
-                </div>
+    <body id="top">
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="{{if eq .Active "home"}}active{{end}}"><a href="/">Home</a></li>
-                        <li class="{{if eq .Active "user_home"}}active{{end}}"><a href="/user">User</a></li>
-                        <li class="{{if eq .Active "cart"}}active{{end}}"><a href="/cart">Cart</a></li>
+        <!-- Header -->
+            <header id="header" class="skel-layers-fixed">
+                <h1><a href="#">DVO Media</a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="/">Home</a></li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Blank</a></li>
-                        <li><a target="_blank" href="https://github.com/jadekler/git-go-websiteskeleton">Site Code</a></li>
-                    </ul>
-                </div>
-            </nav>
+                </nav>
+            </header>
 
-            {{template "body" .}}
+        {{template "body" .}}
 
-
-
-            <div id="layout-footer">
+        <!-- Footer -->
+            <footer id="footer">
                 <div class="container">
-                    <div class="row">
-                      &copy; 2014 All Rights Reserved.
+                    <div class="row double">
+                        <div class="6u">
+                            <div class="row collapse-at-2">
+                                <div class="6u">
+                                    <h3>Links</h3>
+                                    <ul class="alt">
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Pricing</a></li>
+                                        <li><a href="#">Services</a></li>
+                                    </ul>
+                                </div>
+                                <div class="6u">
+                                    <h3>Case Studies</h3>
+                                    <ul class="alt">
+                                        <li><a href="#">Twist Digital</a></li>
+                                        <li><a href="#">EasyJet</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="6u">
+                            <h2>About DVO Media</h2>
+                            <p>DVO Media has expertise in enterprise web development. We work either from our office, or onsite to suit our clients' needs. Get in touch today for a no obligation quote.</p>
+                            <ul class="icons">
+                                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                                <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                                <li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+                            </ul>
+                        </div>
                     </div>
+                    <ul class="copyright">
+                        <li>&copy; 2014 All Rights Reserved.</li>
+                        <li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+                        <li>DVO Media Ltd is a company registered in England and Wales with Company No.09217898 and VAT No.195 2606 89</li>
+                        <li>&nbsp;</li>
+                    </ul>
+
                 </div>
-            </div>
-        </div>
+            </footer>
 
     </body>
 </html>
-
 {{end}}

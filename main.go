@@ -9,6 +9,7 @@ import (
     "git-go-websiteskeleton/app/home"
     "git-go-websiteskeleton/app/user"
     "git-go-websiteskeleton/app/cart"
+    "git-go-websiteskeleton/app/about"
 
     "github.com/golang/glog"
     "github.com/gorilla/mux"
@@ -28,6 +29,7 @@ func main() {
     router.HandleFunc("/user/{id:[0-9]+}", user.GetViewPage).Methods("GET")
 
     router.HandleFunc("/cart", cart.GetHomePage).Methods("GET")
+    router.HandleFunc("/about", about.GetHomePage).Methods("GET")
 
     fileServer := http.StripPrefix("/static/", http.FileServer(http.Dir("static")))
     http.Handle("/static/", fileServer)
