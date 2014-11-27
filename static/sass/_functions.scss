@@ -1,0 +1,3 @@
+@function image-path($filename) {
+  @return '/assets/paydot/images/'+ $filename;
+}

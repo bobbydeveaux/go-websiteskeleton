@@ -1,0 +1,22 @@
+@import "bootstrap";
+@import "bootstrap/theme";
+@import "colours";
+@import "functions";
+
+body {
+  background-color: #eee;
+  font-family:      "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover {
+  color: #fbb450;
+}
+
+.theme-showcase {
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
