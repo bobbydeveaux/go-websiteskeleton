@@ -15,7 +15,7 @@ func GetHomePage(rw http.ResponseWriter, req *http.Request) {
 
     p := Page{
         Active: "jobs",
-        Title: "JObs",
+        Title: "Jobs",
     }
 
     common.Templates = template.Must(template.ParseFiles("templates/jobs/home.html", common.LayoutPath))
