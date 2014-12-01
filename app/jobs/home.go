@@ -1,4 +1,4 @@
-package cart
+package jobs
 
 import (
     "net/http"
@@ -14,11 +14,11 @@ func GetHomePage(rw http.ResponseWriter, req *http.Request) {
     }
 
     p := Page{
-        Active: "cart",
-        Title: "Cart",
+        Active: "jobs",
+        Title: "JObs",
     }
 
-    common.Templates = template.Must(template.ParseFiles("templates/cart/home.html", common.LayoutPath))
+    common.Templates = template.Must(template.ParseFiles("templates/jobs/home.html", common.LayoutPath))
     err := common.Templates.ExecuteTemplate(rw, "base", p)
     common.CheckError(err, 2)
 }

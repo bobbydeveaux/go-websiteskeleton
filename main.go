@@ -8,7 +8,7 @@ import (
     "go-websiteskeleton/app/common"
     "go-websiteskeleton/app/home"
     "go-websiteskeleton/app/user"
-    "go-websiteskeleton/app/cart"
+    "go-websiteskeleton/app/jobs"
     "go-websiteskeleton/app/about"
 
     "github.com/golang/glog"
@@ -28,7 +28,7 @@ func main() {
     router.HandleFunc("/user/view/{id:[0-9]+}", user.GetViewPage).Methods("GET")
     router.HandleFunc("/user/{id:[0-9]+}", user.GetViewPage).Methods("GET")
 
-    router.HandleFunc("/cart", cart.GetHomePage).Methods("GET")
+    router.HandleFunc("/jobs", jobs.GetHomePage).Methods("GET")
     router.HandleFunc("/about", about.GetHomePage).Methods("GET")
 
     fileServer := http.StripPrefix("/static/", http.FileServer(http.Dir("static")))
