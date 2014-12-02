@@ -36,7 +36,7 @@ func main() {
     fileServer := http.StripPrefix("/static/", http.FileServer(http.Dir("static")))
     http.Handle("/static/", fileServer)
 
-    http.ListenAndServe(":8080", nil)
+    http.ListenAndServe(":8181", nil)
 }
 
 func httpInterceptor(router http.Handler) http.Handler {
