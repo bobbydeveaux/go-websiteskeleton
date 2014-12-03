@@ -11,6 +11,7 @@ import (
     "go-websiteskeleton/app/jobs"
     "go-websiteskeleton/app/about"
     "go-websiteskeleton/app/contact"
+    "go-websiteskeleton/app/blog"
 
     "github.com/golang/glog"
     "github.com/gorilla/mux"
@@ -32,6 +33,8 @@ func main() {
     router.HandleFunc("/jobs", jobs.GetHomePage).Methods("GET")
     router.HandleFunc("/about", about.GetHomePage).Methods("GET")
     router.HandleFunc("/contact", contact.GetHomePage).Methods("GET")
+
+    router.HandleFunc("/blog/{title:[a-z0-9-]+}", blog.GetViewPage).Methods("GET")
 
     fileServer := http.StripPrefix("/static/", http.FileServer(http.Dir("static")))
     http.Handle("/static/", fileServer)
