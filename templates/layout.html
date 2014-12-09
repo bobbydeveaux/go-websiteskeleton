@@ -5,7 +5,7 @@
         <title>{{ .Title }} - DVO Media</title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="DVO Media is an online digital agency creating modern websites using the latest technology.">
+        <meta name="description" content="DVO Media is an online digital agency creating modern websites using the latest technology. Bespoke software development across the Yorkshire, Lincolnshire and Midlands regions.">
         <meta name="keywords" content="Websites, online, media, monetisation, cpa, cpc, technology">
 
         <meta name="robots" content="index,follow" />
@@ -20,68 +20,77 @@
             <link rel="stylesheet" href="/static/css/style.css" />
             <link rel="stylesheet" href="/static/css/style-xlarge.css" />
         </noscript>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-57511106-1', 'auto');
+            ga('send', 'pageview');
+        </script>
     </head>
+
     <body id="top">
 
         <!-- Header -->
-            <header id="header" class="skel-layers-fixed">
-                <h1><a href="/">DVO Media</a></h1>
-                <nav id="nav">
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                    </ul>
-                </nav>
-            </header>
+        <header id="header" class="skel-layers-fixed">
+            <h1><a href="/">DVO Media</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </nav>
+        </header>
 
         {{template "body" .}}
 
         <!-- Footer -->
-            <footer id="footer">
-                <div class="container">
-                    <div class="row double">
-                        <div class="6u">
-                            <div class="row collapse-at-2">
-                                <div class="6u">
-                                    <h3>Links</h3>
-                                    <ul class="alt">
-                                        <li><a href="/about">About Us</a></li>
-                                        <li><a href="#">Pricing</a></li>
-                                        <li><a href="#">Services</a></li>
-                                        <li><a href="/jobs">PHP Developer Jobs</a></li>
-                                    </ul>
-                                </div>
-                                <div class="6u">
-                                    <h3>Case Studies</h3>
-                                    <ul class="alt">
-                                        <li><a href="#">Twist Digital</a></li>
-                                        <li><a href="#">EasyJet</a></li>
-                                    </ul>
-                                </div>
+        <footer id="footer">
+            <div class="container">
+                <div class="row double">
+                    <div class="6u">
+                        <div class="row collapse-at-2">
+                            <div class="6u">
+                                <h3>Links</h3>
+                                <ul class="alt">
+                                    <li><a href="/about">About Us</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="/jobs">PHP Developer Jobs</a></li>
+                                </ul>
+                            </div>
+                            <div class="6u">
+                                <h3>Case Studies</h3>
+                                <ul class="alt">
+                                    <li><a href="#">Twist Digital</a></li>
+                                    <li><a href="#">EasyJet</a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="6u">
-                            <h2>About DVO Media</h2>
-                            <p>DVO Media has expertise in enterprise web development. We work either from our office, or onsite to suit our clients' needs. Get in touch today for a no obligation quote.</p>
-                            <ul class="icons">
-                                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                                <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                                <li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
-                            </ul>
-                        </div>
                     </div>
-                    <ul class="copyright">
-                        <li>&copy; 2014 All Rights Reserved.</li>
-                        <li>Design: <a href="http://templated.co">TEMPLATED</a></li>
-                        <li>DVO Media Ltd is a company registered in England and Wales with Company No.09217898 and VAT No.195 2606 89</li>
-                        <li>&nbsp;</li>
-                    </ul>
-
+                    <div class="6u">
+                        <h2>About DVO Media</h2>
+                        <p>DVO Media has expertise in enterprise web development. We work either from our office, or onsite to suit our clients' needs. Get in touch today for a no obligation quote.</p>
+                        <ul class="icons">
+                            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+                        </ul>
+                    </div>
                 </div>
-            </footer>
+                <ul class="copyright">
+                    <li>&copy; 2014 All Rights Reserved.</li>
+                    <li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+                    <li>DVO Media Ltd is a company registered in England and Wales with Company No.09217898 and VAT No.195 2606 89</li>
+                    <li>&nbsp;</li>
+                </ul>
 
+            </div>
+        </footer>
     </body>
 </html>
 {{end}}
