@@ -23,6 +23,16 @@ func GetHomePage(rw http.ResponseWriter, req *http.Request) {
 }
 
 func SubmitContactForm(rw http.ResponseWriter, req *http.Request) {
+    type Page struct {
+        Title string
+        Active string
+    }
+
+    p := Page{
+        Active: "contact",
+        Title: "Contact Us",
+    }
+
     msg := &common.Message{
         Email: req.FormValue("email"),
         Name: req.FormValue("name"),
@@ -33,4 +43,7 @@ func SubmitContactForm(rw http.ResponseWriter, req *http.Request) {
     }
 
     msg.Deliver()
+    common.Templates = template.Must(template.ParseFiles("templates/contact/thanks.html", common.LayoutPath))
+    err := common.Templates.ExecuteTemplate(rw, "base", p)
+    common.CheckError(err, 2)
 }
