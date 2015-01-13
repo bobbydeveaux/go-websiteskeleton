@@ -7,9 +7,27 @@
     </header>
     <div class="container">
         <section>
-            <h2>Coming soon!</h2>
+            <p class="large-text">Tell us about your business. How can we help? Do you want a quote? Whatever your message, we'd love to hear from you.</p>
 
-            <p>Sorry, this page is not quite finished. In the mean time you can email bobby [AT] dvomedia.net</p>
+            <form method="post" class="contact-form">
+                <input type="text" name="name" placeholder="Please tell us your name :)" />
+                <input type="email" name="email" placeholder="What's your email address?" />
+                <input type="text" name="contactNumber" placeholder="What number is best to call you on?" />
+                <textarea name="content" rows="7">Ask us anything!</textarea>
+                <select name="heardvia">
+                    <option value="search-engine">Search Engine</option>
+                    <option value="referral">Referral</option>
+                    <option value="word-of-mouth">Word of Mouth</option>
+                </select>
+                <fieldset>
+                    <legend>What would you like to know more about?</legend>
+                    <input id="chkWebsite" name="require[website]" type="checkbox" value="website" /><label for="chkWebsite">Mobile-friendly websites</label><Br />
+                    <input id="chkMobile" name="require[mobileapps]" type="checkbox" value="mobile" /><label for="chkMobile">Mobile Apps</label><Br />
+                    <input id="chkDevelopers" name="require[developers]" type="checkbox" value="mobile" /><label for="chkDevelopers">Contract Developers</label><Br />
+                    <input id="chkBespoke" name="require[bespoke]" type="checkbox" value="website" /><label for="chkBespoke">Bespoke Website Devlopment</label>
+                </fieldset>
+                <input type="submit" value="Send Message" />
+            </form>
         </section>
     </div>
 </section>
