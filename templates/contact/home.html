@@ -8,11 +8,11 @@
     <div class="container">
         <section>
             <p class="large-text">Tell us about your business. How can we help? Do you want a quote? Whatever your message, we'd love to hear from you.</p>
-
+            <a name="form"></a>
             <form method="post" class="contact-form">
-                <input type="text" name="name" placeholder="Please tell us your name :)" />
-                <input type="email" name="email" placeholder="What's your email address?" />
-                <input type="text" name="contactNumber" placeholder="What number is best to call you on?" />
+                <input type="text" name="name" placeholder="Please tell us your name :)" required />
+                <input type="email" name="email" placeholder="What's your email address?" required/>
+                <input type="tel" pattern="\d*" name="contactNumber" placeholder="What number is best to call you on?" required />
                 <textarea name="content" rows="7">Ask us anything!</textarea>
                 <select name="heardvia">
                     <option value="search-engine">Search Engine</option>
@@ -28,6 +28,7 @@
                 </fieldset>
                 <input type="submit" value="Send Message" />
             </form>
+            <p>Looking for our number? Call us on <a href="tel:+441400318326">01400 318326</a>.
         </section>
     </div>
 </section>
