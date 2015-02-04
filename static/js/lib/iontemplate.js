@@ -13,7 +13,7 @@
 			// Global.
 				global: {
 					range: '*',
-					href: '/static/css/style.css',
+					href: '/static/dist/style.min.css',
 					containers: 1400,
 					grid: {
 						gutters: {
@@ -23,17 +23,10 @@
 					}
 				},
 
-			// XLarge.
-				xlarge: {
-					range: '-1680',
-					href: '/static/css/style-xlarge.css',
-					containers: 1200
-				},
-
 			// Large.
 				large: {
 					range: '-1280',
-					href: '/static/css/style-large.css',
+					href: '/static/dist/style-large.min.css',
 					containers: 960,
 					grid: {
 						gutters: {
@@ -48,7 +41,7 @@
 			// Medium.
 				medium: {
 					range: '-980',
-					href: '/static/css/style-medium.css',
+					href: '/static/dist/style-medium.min.css',
 					containers: '90%',
 					grid: {
 						collapse: 1
@@ -58,7 +51,7 @@
 			// Small.
 				small: {
 					range: '-736',
-					href: '/static/css/style-small.css',
+					href: '/static/dist/style-small.min.css',
 					containers: '90%',
 					grid: {
 						gutters: {
@@ -70,7 +63,7 @@
 			// XSmall.
 				xsmall: {
 					range: '-480',
-					href: '/static/css/style-xsmall.css',
+					href: '/static/dist/style-xsmall.min.css',
 					grid: {
 						collapse: 2
 					}
