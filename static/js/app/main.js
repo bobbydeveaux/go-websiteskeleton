@@ -1,5 +1,5 @@
-define(["jquery", "html5shiv", "skel.min", ], function($) {
-    require(["skel-layers.min", "iontemplate"]);
+define(["jquery", "skel", "skel-layers"], function(jQuery) {
+    require(["iontemplate"]);
     $(function() {
 
     });

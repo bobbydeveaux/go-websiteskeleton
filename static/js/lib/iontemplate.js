@@ -23,6 +23,13 @@
 					}
 				},
 
+			// XLarge.
+				xlarge: {
+					range: '-1680',
+					href: '/static/dist/style-xlarge.min.css',
+					containers: 1200
+				},
+
 			// Large.
 				large: {
 					range: '-1280',
