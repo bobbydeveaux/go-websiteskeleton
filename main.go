@@ -12,6 +12,7 @@ import (
     "go-websiteskeleton/app/about"
     "go-websiteskeleton/app/contact"
     "go-websiteskeleton/app/blog"
+    "go-websiteskeleton/app/team"
 
     "github.com/golang/glog"
     "github.com/gorilla/mux"
@@ -31,6 +32,7 @@ func main() {
     router.HandleFunc("/user/{id:[0-9]+}", user.GetViewPage).Methods("GET")
 
     router.HandleFunc("/jobs", jobs.GetHomePage).Methods("GET")
+    router.HandleFunc("/team", team.GetHomePage).Methods("GET")
     router.HandleFunc("/about", about.GetHomePage).Methods("GET")
     router.HandleFunc("/contact", contact.GetHomePage).Methods("GET")
     router.HandleFunc("/contact", contact.SubmitContactForm).Methods("POST")
