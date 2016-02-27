@@ -8,11 +8,8 @@ import (
     "go-websiteskeleton/app/common"
     "go-websiteskeleton/app/home"
     "go-websiteskeleton/app/user"
-    "go-websiteskeleton/app/jobs"
-    "go-websiteskeleton/app/about"
     "go-websiteskeleton/app/contact"
     "go-websiteskeleton/app/blog"
-    "go-websiteskeleton/app/team"
 
     "github.com/golang/glog"
     "github.com/gorilla/mux"
@@ -26,21 +23,18 @@ func main() {
     http.Handle("/", httpInterceptor(router))
 
     router.HandleFunc("/", home.GetHomePage).Methods("GET")
-    router.HandleFunc("/user{_:/?}", user.GetHomePage).Methods("GET")
+    router.HandleFunc("/users{_:/?}", user.GetHomePage).Methods("GET")
 
     router.HandleFunc("/user/view/{id:[0-9]+}", user.GetViewPage).Methods("GET")
     router.HandleFunc("/user/{id:[0-9]+}", user.GetViewPage).Methods("GET")
 
-    router.HandleFunc("/jobs", jobs.GetHomePage).Methods("GET")
-    router.HandleFunc("/team", team.GetHomePage).Methods("GET")
-    router.HandleFunc("/about", about.GetHomePage).Methods("GET")
     router.HandleFunc("/contact", contact.GetHomePage).Methods("GET")
     router.HandleFunc("/contact", contact.SubmitContactForm).Methods("POST")
 
     router.HandleFunc("/blog/{title:[a-z0-9-]+}", blog.GetViewPage).Methods("GET")
 
-    fileServer := http.StripPrefix("/static/", http.FileServer(http.Dir("static")))
-    http.Handle("/static/", fileServer)
+    fileServer := http.StripPrefix("/dist/", http.FileServer(http.Dir("web/dist")))
+    http.Handle("/dist/", fileServer)
 
     http.ListenAndServe(":8181", nil)
 }

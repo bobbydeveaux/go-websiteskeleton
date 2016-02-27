@@ -1,2 +1,0 @@
-<p>In short, this is the first entry into the blog via our new CMS written in Go. Update to follow :)</p>
-<p><strong>UPDATE:</strong> Further update to follow

@@ -1,5 +1,7 @@
-git-go-websiteskeleton
+go-websiteskeleton
 ===============
+
+Note: This was cloned from https://github.com/jadekler/git-go-websiteskeleton and heavily modified to include latest web dev tools such as gulp & requireJs
 
 A basic website skeleton in Go (or golang, if you prefer) that comes with the Gorilla Multiplexer for routing, glog for access and error logging, as well as jquery, bootstrap, and font-awesome for making excellent web apps.
 
@@ -11,10 +13,13 @@ A basic website skeleton in Go (or golang, if you prefer) that comes with the Go
 
 ### Installation ###
 1. cd $GOPATH/src
-2. git clone https://github.com/jadekler/git-go-websiteskeleton.git
-3. cd git-go-websiteskeleton
-4. go run main.go
-5. Navigate to http://localhost:8080
+2. git clone https://github.com/dvomedia/go-websiteskeleton.git
+3. cd go-websiteskeleton
+4. bower install
+5. npm install
+6. gulp
+7. go run main.go
+5. Navigate to http://localhost:8181
 
 Note: To make it your own project, simply remove the .git file from the project and upload it into your own repository.
 

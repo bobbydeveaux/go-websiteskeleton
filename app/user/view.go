@@ -21,7 +21,7 @@ func GetViewPage(rw http.ResponseWriter, req *http.Request) {
 
     p := Page{
         Active: "user_view",
-        Title: "Viewing User",
+        Title:  "Viewing User",
         UserId: userId,
     }
 

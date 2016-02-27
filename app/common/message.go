@@ -23,8 +23,8 @@ func (msg *Message) Deliver() error {
 
   body := fmt.Sprintf("Reply-To: %v\r\nSubject: New Enquiry\r\n%v", msg.Email, content)
 
-  username := "bobby@dvomedia.net"
-  password := "B0bD3v0s"
+  username := "user@gmail.com"
+  password := "password"
   auth := smtp.PlainAuth("", username, password, "smtp.gmail.com")
 
   return smtp.SendMail("smtp.gmail.com:587", auth, msg.Email, to, []byte(body))

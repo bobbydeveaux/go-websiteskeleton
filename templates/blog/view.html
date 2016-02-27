@@ -1,15 +1,15 @@
 {{define "body"}}
 <!-- Main -->
-<section id="main" class="wrapper style1">
-    <header class="major">
-        <h2>{{ .Title }}</h2>
-        <p>Enjoy the read :)</p>
-    </header>
+<div class="starter-template">
+    <h1>{{ .Title }}</h1>
+    <p class="lead">Enjoy the read :)</p>
+</div>
+
+<div class="col-md-12">
     <div class="container">
         <section>
             {{ .Body }}
         </section>
-
     </div>
-</section>
+</div>
 {{ end }}

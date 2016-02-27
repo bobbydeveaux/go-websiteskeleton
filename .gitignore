@@ -1,5 +1,7 @@
 .DS_Store
-access_log.txt
 main
 !main.go
-static/dist
+web/dist
+bower_components
+node_modules
+.sass-cache
