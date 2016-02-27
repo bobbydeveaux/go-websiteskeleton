@@ -3,7 +3,7 @@ go-websiteskeleton
 
 Note: This was cloned from https://github.com/jadekler/git-go-websiteskeleton and heavily modified to include latest web dev tools such as gulp & requireJs
 
-A basic website skeleton in Go (or golang, if you prefer) that comes with the Gorilla Multiplexer for routing, glog for access and error logging, as well as jquery, bootstrap, and font-awesome for making excellent web apps.
+A basic website skeleton in Go (or golang, if you prefer) that comes with the Gorilla Multiplexer for routing, glog for access and error logging, as well as gulp, bower, npm, requirejs, jquery, bootstrap, and font-awesome for making excellent web apps.
 
 ### You Will Need ###
 1. A go environment http://golang.org/doc/install#install
