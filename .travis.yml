@@ -5,7 +5,6 @@ go:
 before-install:
   - composer self-update
 install:
-  - make get-deps
   - go get github.com/gorilla/mux
   - go get github.com/golang/glog
   - gem install sass
